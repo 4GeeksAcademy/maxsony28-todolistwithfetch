@@ -7,7 +7,7 @@ const stateTask = {
 }
 
 const TodoList = () => {
-  const [todos, setTodos] = useState([]);
+  const [todos, setTodos] = useState([]); //Todas las tareas
 
   const [task, setTask] = useState(stateTask);
 
@@ -152,7 +152,7 @@ const TodoList = () => {
                   type="text"
                   name="label"
                   className="form-control border-0 custom-input py-3 px-4 fs-4"
-                  placeholder="What needs to be done?"
+                  placeholder="What do you need to do?"
                   value={task.label}
                   onChange={handleChange}
                   onKeyDown={addNewTask}
