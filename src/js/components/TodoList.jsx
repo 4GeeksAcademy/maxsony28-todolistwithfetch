@@ -15,7 +15,7 @@ const TodoList = () => {
 
   const getAllTask = async () => {
     try {
-      const response = await fetch(`${API_URL}/users/jean`);
+      const response = await fetch(`${API_URL}/users/maxsony28`);
       const data = await response.json();
 
       if (response.ok) {
@@ -31,7 +31,7 @@ const TodoList = () => {
 
   const createUser = async () => {
     try {
-      const response = await fetch(`${API_URL}/users/jean`, {
+      const response = await fetch(`${API_URL}/users/maxsony28`, {
         method: "POST"
       });
       if (response.ok) {
@@ -56,7 +56,7 @@ const TodoList = () => {
   const addNewTask = async (evento) => {
     if (evento.key === "Enter" && task.label.trim() !== "") {
       try {
-        const response = await fetch(`${API_URL}/todos/jean`, {
+        const response = await fetch(`${API_URL}/todos/maxsony28`, {
           method: "POST",
           headers: {
             "Content-Type": "application/json"
