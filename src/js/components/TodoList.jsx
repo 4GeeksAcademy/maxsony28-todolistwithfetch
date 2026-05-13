@@ -22,7 +22,9 @@ const TodoList = () => {
         setTodos(data.todos);
       }
       if (response.status === 404) {
-        createUser();
+        //createUser();
+        await createUser();
+        return;
       }
     } catch (error) {
       console.error("Error al obtener tareas:", error);
